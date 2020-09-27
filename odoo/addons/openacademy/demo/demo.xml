@@ -1,0 +1,15 @@
+<odoo>
+    <record model="openacademy.course" id="python">
+        <field name="name">Python</field>
+        <field name="description">Python is an multipurpose language</field>
+    </record>
+    <record model="openacademy.course" id="ml">
+        <field name="name">Machine Learning</field>
+        <field name="description">Machine Learning is a python framework
+            used to train you program</field>
+    </record>
+    <record model="openacademy.course" id="odoo">
+        <field name="name">Odoo</field>
+        <field name="description">Odoo is a business suit build upon Python.</field>
+    </record>
+</odoo>
