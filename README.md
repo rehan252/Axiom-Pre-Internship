@@ -2,7 +2,7 @@
 !! Purpose of this repository is to demonstrate my work and practice during Training Courses provide by Axiom World for the Position of Python Developer !!
 
 # Requirements 
-sudo apt-get update
+sudo apt-get update <br/>
 sudo apt-get install python3.8
 
 # Requirements for Odoo
