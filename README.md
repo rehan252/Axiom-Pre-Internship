@@ -7,23 +7,23 @@ sudo apt-get install python3.8
 
 # Requirements for Odoo
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo reboot
-wget -O - https://nightly.odoo.com/odoo.key | sudo apt-key add -
-echo "deb http://nightly.odoo.com/13.0/nightly/deb/ ./" | sudo tee /etc/apt/sources.list.d/odoo.list
-sudo apt-get update 
+sudo apt-get update <br/>
+sudo apt-get upgrade <br/>
+sudo reboot <br/>
+wget -O - https://nightly.odoo.com/odoo.key | sudo apt-key add - <br/>
+echo "deb http://nightly.odoo.com/13.0/nightly/deb/ ./" | sudo tee /etc/apt/sources.list.d/odoo.list <br/>
+sudo apt-get update <br/>
+<br/>
+sudo apt-get install postgresql <br/>
+sudo systemctl start postgresql <br/>
+sudo systemctl enable postgresql <br/>
+sudo su - postgres <br/>
+createuser odoo -U postgres -dRSP <br/>
+exit <br/><br/>
 
-sudo apt-get install postgresql
-sudo systemctl start postgresql
-sudo systemctl enable postgresql
-sudo su - postgres
-createuser odoo -U postgres -dRSP
-exit
+sudo apt-get install odoo <br/>
+systemctl start odoo <br/>
+systemctl enable odoo <br/><br/>
 
-sudo apt-get install odoo
-systemctl start odoo
-systemctl enable odoo
-
-You can now access Odoo using your web browser at the following address.
+You can now access Odoo using your web browser at the following address. <br/>
 http://[your-vultr-instance-IP]:8069
